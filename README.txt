@@ -1,17 +1,21 @@
-Directory contains 2 folders:
+Music Emotion Recognition on the PMEmo dataset (http://pmemo.hellohui.cn/) using SVM+ as developed by Vapnik et al. [https://www.sciencedirect.com/science/article/pii/S0893608009001130]
 
-	•	annotation_py_files: .py and .ipynb files for segmenting annotations and features
+
+Repository contains 2 folders:
+
+1.	annotation_py_files: 
 	⁃	annotation_loading_segmentation.ipynb/.py
 	⁃	features_segmentation.ipynb/.py
+
+.py and .ipynb files for segmenting music clip annotations and features.
 
 annotation_loading_segmentation reads in individual annotation csv files and segments them based on affective change point locations.
 
 features_segmentation segments dynamic audio features from PMEmo dataset according to breakpoints determined in annotation_loading_segmentation.
 
-.py and .ipynb files provided for both.
 
 
-	•	SVM_plus: MATLAB .m files for SVM and SVM+ modelling 
+2.	SVM_plus:  
 	⁃	arousal_preproc.m
 	⁃	valence_preproc.m
 	⁃	libSVM_cv.m
@@ -25,6 +29,8 @@ features_segmentation segments dynamic audio features from PMEmo dataset accordi
 	⁃	L1_normalization.m
 	⁃	L2_distance_2.m
 	⁃	return_GaussianKernel.m
+
+MATLAB .m files for SVM and SVM+ modelling.
 
 arousal_ and valence_preproc.m load segmented features and ground truths then create train/test splits, scale features, create privileged information measures, test labels created, then save workspace variables.
 
