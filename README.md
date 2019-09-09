@@ -16,6 +16,7 @@ Contents:
 - **features_segmentation.ipynb**
 	Segments dynamic audio features from PMEmo dataset according to breakpoints determined in annotation_loading_segmentation
 
+Github occasionally struggles to render large .ipynb files; if they are not displaying, please paste the whole URL into nb viewer (https://nbviewer.jupyter.org/).
 
 ## SVM_plus
 
