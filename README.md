@@ -1,6 +1,8 @@
 # MER Using SVM+
 
-Music Emotion Recognition on the PMEmo dataset (http://pmemo.hellohui.cn/) employing the Learning Using Privileged Information (LUPI) paradigm via SVM+ as developed by Vapnik et al. [https://www.sciencedirect.com/science/article/pii/S0893608009001130]
+Music Emotion Recognition on the PMEmo dataset (http://pmemo.hellohui.cn/) employing the Learning Using Privileged Information (LUPI) paradigm via SVM+ as developed by Vapnik et al. [https://www.sciencedirect.com/science/article/pii/S0893608009001130]. LUPI makes use of additional (privileged) information available at train time, but not at test, to increase performance of learning algorithms.
+
+The objective of this classifier is to identify the emotional valence (positive or negative) and arousal (high or low) associated with a set of musical excerpts. The privileged information in this case is the level of disagreement between the ground truth responses of individual annotators of the dataset; classically, disagreement between annotators has been seen as noise - a problem to be solved. This is an attempt to extract signal from that disagreement, and to test the predictive power of that signal for classification. The LUPI algorithm used is SVM+, an extension of a support vector machine, as implemented by [Li et al.](https://www.csie.ntu.edu.tw/~cjlin/libsvm/oldfiles/index-1.0.html)
 
 
 Repository contains 2 folders:
